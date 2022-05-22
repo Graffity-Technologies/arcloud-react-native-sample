@@ -12,9 +12,9 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		420BA4E8C48D4EFBB16DD10A /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AC7DA60B74F178679E3EB /* noop-file.swift */; };
-		76C1C3752838AE0400B81B4D /* GraffityARCloud in Frameworks */ = {isa = PBXBuildFile; productRef = 76C1C3742838AE0400B81B4D /* GraffityARCloud */; };
 		76C1C3832838DFCF00B81B4D /* ARCloudIos.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C1C3822838DFCF00B81B4D /* ARCloudIos.m */; };
 		76C1C3852839022F00B81B4D /* ARCloudIos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1C3842839022F00B81B4D /* ARCloudIos.swift */; };
+		76C1C479283A825900B81B4D /* GraffityARCloud in Frameworks */ = {isa = PBXBuildFile; productRef = 76C1C478283A825900B81B4D /* GraffityARCloud */; };
 		96905EF65AED1B983A6B3ABC /* libPods-tabsapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-tabsapp.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
@@ -47,7 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96905EF65AED1B983A6B3ABC /* libPods-tabsapp.a in Frameworks */,
-				76C1C3752838AE0400B81B4D /* GraffityARCloud in Frameworks */,
+				76C1C479283A825900B81B4D /* GraffityARCloud in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +167,7 @@
 			);
 			name = tabsapp;
 			packageProductDependencies = (
-				76C1C3742838AE0400B81B4D /* GraffityARCloud */,
+				76C1C478283A825900B81B4D /* GraffityARCloud */,
 			);
 			productName = tabsapp;
 			productReference = 13B07F961A680F5B00A75B9A /* tabsapp.app */;
@@ -182,6 +182,7 @@
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 5U237QB3J2;
 						LastSwiftMigration = 1250;
 					};
 				};
@@ -196,7 +197,7 @@
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			packageReferences = (
-				76C1C3732838AE0300B81B4D /* XCRemoteSwiftPackageReference "graffity-arcloud-ios" */,
+				76C1C477283A825900B81B4D /* XCRemoteSwiftPackageReference "graffity-arcloud-ios" */,
 			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
@@ -518,20 +519,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		76C1C3732838AE0300B81B4D /* XCRemoteSwiftPackageReference "graffity-arcloud-ios" */ = {
+		76C1C477283A825900B81B4D /* XCRemoteSwiftPackageReference "graffity-arcloud-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Graffity-Technologies/graffity-arcloud-ios.git";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 0.4.6;
+				kind = exactVersion;
+				version = 0.4.10;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		76C1C3742838AE0400B81B4D /* GraffityARCloud */ = {
+		76C1C478283A825900B81B4D /* GraffityARCloud */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 76C1C3732838AE0300B81B4D /* XCRemoteSwiftPackageReference "graffity-arcloud-ios" */;
+			package = 76C1C477283A825900B81B4D /* XCRemoteSwiftPackageReference "graffity-arcloud-ios" */;
 			productName = GraffityARCloud;
 		};
 /* End XCSwiftPackageProductDependency section */
